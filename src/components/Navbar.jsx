@@ -52,7 +52,7 @@ const Navbar = () => {
 
   const isMobile = windowWidth <= 768;
 
-  // Variants for desktop orbit (unchanged)
+  // Variants for desktop orbit
   const orbVariants = {
     closed: { scale: 1 },
     open: { scale: 1.1 },
@@ -76,25 +76,23 @@ const Navbar = () => {
     open: { opacity: 0.5, transition: { duration: 0.3 } },
   };
 
-  const dragConstraints = {
-    left: 220,
-    right: windowWidth - 240,
-    top: 20,
-    bottom: window.innerHeight - 240,
-  };
-
-  // Variants for mobile hamburger menu
   const mobileMenuVariants = {
     closed: { x: '100%', opacity: 0 },
     open: { x: 0, opacity: 1, transition: { duration: 0.3 } },
   };
 
-  const initialX = windowWidth / 4; // Right of center for desktop
+  // Adjusted drag constraints for right-aligned position
+  const dragConstraints = {
+    left: -windowWidth + 240, // Allow dragging to near left edge
+    right: 0, // Right edge of viewport
+    top: 0, // Top edge
+    bottom: window.innerHeight - 240, // Bottom edge minus orb height/orbit
+  };
 
   return (
     <>
       {isMobile ? (
-        // Mobile: Simple Hamburger Menu
+        // Mobile: Hamburger Menu
         <div className="fixed top-4 right-4 z-50">
           <motion.button
             className="w-12 h-12 bg-[var(--rf-accent)] rounded-full flex items-center justify-center border-2 border-[var(--rf-link)]"
@@ -106,7 +104,6 @@ const Navbar = () => {
             {isOpen ? <FaTimes className="text-[var(--rf-primary)] text-2xl" /> : <FaBars className="text-[var(--rf-primary)] text-2xl" />}
           </motion.button>
 
-          {/* Mobile Menu */}
           {isOpen && (
             <motion.div
               className="fixed top-0 right-0 w-64 h-full bg-[var(--rf-primary)] shadow-lg z-40 p-4"
@@ -158,20 +155,18 @@ const Navbar = () => {
           )}
         </div>
       ) : (
-        // Desktop/Tablet: Orbiting Navbar (unchanged from your provided code)
+        // Desktop/Tablet: Orbiting Navbar
         <motion.div
-          className="absolute z-50"
-          style={{ top: '20px', left: '50%', x: initialX }}
+          className="absolute z-50 top-5 right-20 md:right-32 lg:right-40 translate-y-32 select-none touch-none"
           drag={isDraggable}
           dragConstraints={dragConstraints}
           dragElastic={0.2}
           dragMomentum={false}
-          initial={{ x: initialX }}
+          initial={{ x: 0, y: 0 }} // Restored initial position for drag
           onDoubleClick={toggleDraggable}
         >
-          {/* Central Orb (Sun) */}
           <motion.div
-            className="relative w-16 h-16 bg-[var(--rf-accent)] rounded-full flex items-center justify-center border-4 border-[var(--rf-link)] cursor-pointer overflow-hidden z-20"
+            className="relative w-16 h-16 bg-[var(--rf-accent)] rounded-full flex items-center justify-center border-4 border-[var(--rf-link)] cursor-pointer overflow-hidden z-20 shadow-[0_0_15px_var(--rf-link)]"
             variants={orbVariants}
             initial="closed"
             animate={isDraggable ? 'dragging' : isOpen ? 'open' : 'closed'}
@@ -190,7 +185,6 @@ const Navbar = () => {
             </motion.div>
           </motion.div>
 
-          {/* Orbiting Nodes (Planets) */}
           {isOpen && (
             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-30">
               {navLinks.map((link, i) => (
@@ -238,7 +232,6 @@ const Navbar = () => {
             </div>
           )}
 
-          {/* Orbital Paths (Solar System Rings) */}
           {isOpen && (
             <motion.svg
               className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10"
