@@ -1,3 +1,50 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Orbitron:wght@400;700&display=swap');
+
+:root {
+  --rf-primary: #1A1A1A;
+  --rf-secondary: #2D2D2D;
+  --rf-accent: #FF6F61;
+  --rf-text: #E0E0E0;
+  --rf-link: #00FFFF;
+}
+
+[data-theme="light"] {
+  --rf-primary: #E0E0E0;
+  --rf-secondary: #B0B0B0;
+  --rf-accent: #FF6F61;
+  --rf-text: #1A1A1A;
+  --rf-link: #00CED1;
+}
+
+body {
+  background-color: var(--rf-primary);
+  color: var(--rf-text);
+  font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Orbitron', sans-serif;
+}
+
+a {
+  color: var(--rf-link);
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--rf-accent);
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 10px var(--rf-link); }
+  50% { box-shadow: 0 0 20px var(--rf-link); }
+  100% { box-shadow: 0 0 10px var(--rf-link); }
+}
+.active-nav-link {
+  /* Add your styles here */
+  box-shadow: 0 0 10px var(--rf-accent); /* Example style */
+}

@@ -1,12 +1,21 @@
-// eslint-disable-next-line no-unused-vars
-import React from 'react'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import Team from './pages/Team';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+// ... other imports
 
 function App() {
   return (
-    <div>
-      <h1 className='bg-slate-500 text-2xl text-red-400'>new tailwind  </h1>
-    </div>
-  )
+    <BrowserRouter>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/team" element={<Team />} />
+        {/* ... other routes */}
+      </Routes>
+      <Footer />
+    </BrowserRouter>
+  );
 }
-
-export default App
+export default App;
