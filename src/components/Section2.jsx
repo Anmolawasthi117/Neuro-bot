@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import {Link } from 'react-router-dom';
+
 import { motion } from 'framer-motion';
 
 const Section2 = () => {
@@ -110,20 +110,7 @@ const Section2 = () => {
             ))}
           </div>
         </div>
-        <div className="mt-8 md:mt-12 text-center">
-          
-            <motion.button
-              className=" transition-none bg-[var(--rf-accent)] text-[var(--rf-primary)] font-vt323 py-2 px-6 rounded-full border-2 border-[var(--rf-link)] text-xl shadow-[0_0_10px_var(--rf-accent)]"
-              // initial={{ scale: 1 }}
-              whileHover={{  boxShadow: '0 0 20px var(--rf-link), 0 0 30px var(--rf-link)' }}
-              whileTap={{ scale: 0.95 }}
-              transition={{ duration: 0.3 }}
-            >
-              <Link to="/join-us">Join the Crew</Link>
-              
-            </motion.button>
-         
-        </div>
+        
       </div>
     </section>
   );
