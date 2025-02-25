@@ -6,13 +6,13 @@ const HeroSection = () => {
   const [isGameStarted, setIsGameStarted] = useState(false);
   const [missionLog, setMissionLog] = useState('');
   const gameState = useRef({
-    ship: { x: 0, y: 0, width: 40, height: 40, speed: 5 },
+    ship: { x: 0, y: 0, width: 40, height: 40, speed: 10},
     bullets: [],
     aliens: [],
     alienBullets: [],
     score: 0,
     gameOver: false,
-    alienSpeed: 2,
+    alienSpeed: 1,
     direction: 1,
   });
 
@@ -64,7 +64,7 @@ const HeroSection = () => {
       const alienWidth = 40;
       const alienHeight = 40;
       const cols = Math.floor(canvas.width / 60) - 1; // Adjust based on canvas width
-      const rows = 5;
+      const rows = 3;
       for (let i = 0; i < rows; i++) {
         for (let j = 0; j < cols; j++) {
           gameState.current.aliens.push({
@@ -91,7 +91,7 @@ const HeroSection = () => {
         gameState.current.ship.x -= gameState.current.ship.speed;
       } else if (e.key === 'ArrowRight' && gameState.current.ship.x < canvas.width - 20) {
         gameState.current.ship.x += gameState.current.ship.speed;
-      } else if (e.key === ' ') {
+      } else if (e.key === 'ArrowUp' || e.key === ' ') {
         gameState.current.bullets.push({
           x: gameState.current.ship.x,
           y: gameState.current.ship.y - 20,
@@ -256,7 +256,7 @@ const HeroSection = () => {
 
       {/* Instructions */}
       <div className="mt-4 text-center text-[var(--rf-link)] font-[Orbitron] text-sm md:text-base opacity-90 animate-flicker">
-        Use ← → to move, Space to shoot. Press any key to start!
+        Use ← → to move,↑ to shoot. Press any key to start!
       </div>
     </section>
   );

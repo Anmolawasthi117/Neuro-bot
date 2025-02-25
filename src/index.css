@@ -2,7 +2,41 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Orbitron:wght@400;700&display=swap');
+/* Local Fonts */
+@font-face {
+  font-family: 'VT323';
+  src: url('../public/fonts/VT323-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Orbitron';
+  src: url('../public/fonts/Orbitron-VariableFont_wght.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Orbitron';
+  src: url('../public/fonts/Orbitron-VariableFont_wght.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../public/fonts/Roboto-VariableFont_wdth\,wght.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../public/fonts/Roboto-Italic-VariableFont_wdth\,wght.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
 
 :root {
   --rf-primary: #1A1A1A;
@@ -23,7 +57,7 @@
 body {
   background-color: var(--rf-primary);
   color: var(--rf-text);
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', 'VT323', 'Orbitron', sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -45,8 +79,7 @@ a:hover {
   100% { box-shadow: 0 0 10px var(--rf-link); }
 }
 .active-nav-link {
-  /* Add your styles here */
-  box-shadow: 0 0 10px var(--rf-accent); /* Example style */
+  box-shadow: 0 0 10px var(--rf-accent);
 }
 
 @keyframes glitch {

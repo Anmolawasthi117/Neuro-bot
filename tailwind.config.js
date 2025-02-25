@@ -6,6 +6,11 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        vt323: ['VT323', 'monospace'],
+        orbitron: ['Orbitron', 'sans-serif'],
+        roboto: ['Roboto', 'sans-serif'],
+      },
       colors: {
         'rf-primary': 'var(--rf-primary)',
         'rf-secondary': 'var(--rf-secondary)',
