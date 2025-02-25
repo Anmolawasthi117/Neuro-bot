@@ -1,0 +1,10 @@
+[
+    { "name": "Akash", "role": "Design Daddy", "bio": "Droppin’ pixel heat, no cap.", "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/65.gif" },
+    { "name": "Prakhar", "role": "Club Boss", "bio": "Runnin’ the squad—top dog szn.", "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/6.gif" },
+    { "name": "Aman", "role": "Co-King", "bio": "Holdin’ it down—vibes co-locked.", "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/149.gif" },
+    { "name": "Jaspreet", "role": "Core Goat", "bio": "Crew’s backbone—pure slay.", "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/384.gif" },
+    { "name": "Arpit", "role": "Hype Wingman", "bio": "Bringin’ the juice—flex assist.", "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/9.gif" },
+    { "name": "Anmol", "role": "Chaos Captain", "bio": "Stirrin’ the pot—wildcard drip.", "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/392.gif" },
+    { "name": "Sinku", "role": "Teach Titan", "bio": "Droppin’ wisdom—edu glow-up.", "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/130.gif" },
+    { "name": "Pranav", "role": "Core Commander", "bio": "Lead stackin’—bot game strong.", "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/254.gif" }
+  ]
