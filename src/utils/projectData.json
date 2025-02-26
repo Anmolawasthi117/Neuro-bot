@@ -1,0 +1,20 @@
+[
+    {
+      "id": 1,
+      "title": "Rover X1",
+      "description": "A rugged all-terrain rover with real-time navigation.",
+      "image": "https://i.pinimg.com/736x/8e/7d/70/8e7d70f0fba6fc4d57dd074e99e6466a.jpg",
+      "video": null,
+      "tech": ["Arduino", "LiDAR", "React"],
+      "model": "/assets/rover-x1.glb" 
+    },
+    {
+      "id": 2,
+      "title": "Drone Scout",
+      "description": "Lightweight scouting drone with live video feed.",
+      "image": "https://i.pinimg.com/474x/3a/1f/3e/3a1f3ea7a1ccaebc0f6c4b84ea604f6e.jpg",
+      "video": null,
+      "tech": ["Raspberry Pi", "Camera Module"],
+      "model": null
+    }
+  ]

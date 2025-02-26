@@ -1,11 +1,13 @@
-import React from 'react'
+// import VortexScene from '../components/VortexScene';
 
-const Projects = () => {
+
+function Projects() {
   return (
-    <div>
-      
+    <div style={{ height: '200vh', overflow: 'auto' }}>
+      {/* <VortexScene /> */}
+      comming soon
     </div>
-  )
+  );
 }
 
-export default Projects
+export default Projects;

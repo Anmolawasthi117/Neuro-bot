@@ -10,6 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@react-three/drei": "^9.88.0",
+    "@react-three/fiber": "^8.15.0",
     "@tailwindcss/vite": "^4.0.8",
     "ace-builds": "^1.39.0",
     "dotenv": "^16.4.7",
@@ -22,11 +24,11 @@
     "react-draggable": "^4.4.6",
     "react-hook-form": "^7.54.2",
     "react-icons": "^5.5.0",
-    "react-native-web": "^0.19.13",
     "react-router-dom": "^7.2.0",
     "react-toastify": "^11.0.5",
     "resend": "^4.1.2",
     "robotics-club-site": "file:",
+    "three": "^0.173.0",
     "use-local-storage": "^3.0.0"
   },
   "devDependencies": {
