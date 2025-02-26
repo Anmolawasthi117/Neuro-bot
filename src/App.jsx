@@ -3,6 +3,7 @@ import Home from './pages/Home';
 import Team from './pages/Team';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import JoinUs from './pages/JoinUs';
 // ... other imports
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/team" element={<Team />} />
+        <Route path="/join-us" element={<JoinUs/>}/>
         {/* ... other routes */}
       </Routes>
       <Footer />
