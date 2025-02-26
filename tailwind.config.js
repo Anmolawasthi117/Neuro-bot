@@ -10,6 +10,8 @@ export default {
         vt323: ['VT323', 'monospace'],
         orbitron: ['Orbitron', 'sans-serif'],
         roboto: ['Roboto', 'sans-serif'],
+        caveat: ['Caveat', 'cursive'],
+        poppins: ['Poppins', 'sans-serif'],
       },
       colors: {
         'rf-primary': 'var(--rf-primary)',

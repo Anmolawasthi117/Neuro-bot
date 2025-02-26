@@ -1,0 +1,334 @@
+{
+    "sections": [
+      {
+        "title": "Introduction to Robotics & Electronics",
+        "description": "Hey newbie! Robotics and electronics are all about making cool stuff happen with circuits and code. Electronics powers things like your phone, while robotics brings machines to life—like a Roomba vacuuming your floor. Let’s start with the basics!",
+        "content": [
+          {
+            "subtitle": "Key Concepts",
+            "text": "Electricity is the juice that flows through wires—like water in pipes. Voltage (V) pushes it, current (I) is how much flows, and resistance (R) slows it down. Ohm’s Law (V = I × R) ties it all together. Circuits are the paths electricity follows, and components like resistors and LEDs make them fun!"
+          },
+          {
+            "subtitle": "Tools You’ll Need",
+            "text": "Grab a multimeter to check your circuits (like a tech doctor), a breadboard for mess-free testing, jumper wires to connect stuff, and a battery or USB for power."
+          }
+        ],
+        "tutorials": [
+          {
+            "title": "Electricity Basics for Beginners",
+            "link": "https://www.youtube.com/watch?v=8Jq7YxCBUZI"
+          },
+          {
+            "title": "How Circuits Work Explained Simply",
+            "link": "https://www.youtube.com/watch?v=HOFp8hfw84U"
+          },
+          {
+            "title": "Ohm’s Law Made Easy",
+            "link": "https://www.youtube.com/watch?v=Bs6nMgZAzsk"
+          }
+        ],
+        "projects": [
+          {
+            "title": "Light a Bulb",
+            "description": "Hook up an LED, battery, and wires on a breadboard. Flip the switch and bam—light! It’s your first step into electronics."
+          },
+          {
+            "title": "Paper Circuit Card",
+            "description": "Use copper tape, a coin battery, and an LED to make a glowing card. Perfect for impressing your friends with techy crafts!"
+          }
+        ],
+        "realLifeExample": "Your phone charger uses circuits to tame electricity—same ideas you’re playing with here."
+      },
+      {
+        "title": "Microcontrollers: The Brains Behind the Action",
+        "description": "Microcontrollers are the tiny brains that run your robot—like the CPU in your game console. They take inputs (like a button press) and control outputs (like lights). Let’s meet them!",
+        "content": [
+          {
+            "subtitle": "Popular Picks",
+            "text": "Arduino Uno is your beginner buddy—easy and cheap. Raspberry Pi 4 is a mini-computer for big projects. ESP32 adds Wi-Fi magic, and Micro:bit is super simple for quick wins."
+          },
+          {
+            "subtitle": "Key Specs",
+            "text": "Digital pins handle on/off stuff (like LEDs), analog pins read sensors, memory stores your code, and clock speed is how fast it thinks."
+          }
+        ],
+        "tutorials": [
+          {
+            "title": "What’s a Microcontroller? | Arduino Intro",
+            "link": "https://www.youtube.com/watch?v=QAQxA9oqCsU"
+          },
+          {
+            "title": "Arduino vs. Raspberry Pi vs. ESP32",
+            "link": "https://www.youtube.com/watch?v=8lX-zSuu9xM"
+          }
+        ],
+        "projects": [
+          {
+            "title": "Blink an LED",
+            "description": "Connect an LED to an Arduino and make it flash with code. It’s the ‘Hello World’ of robotics!"
+          },
+          {
+            "title": "Button Toggle",
+            "description": "Press a button to flip an LED on or off. Your first taste of controlling things!"
+          }
+        ],
+        "realLifeExample": "Your thermostat uses a microcontroller to keep your room cozy."
+      },
+      {
+        "title": "Arduino: Your Beginner-Friendly Playground",
+        "description": "Arduino is the MVP for newbies—simple, cheap (like $20), and perfect for starting out. Let’s set it up and make some magic happen!",
+        "content": [
+          {
+            "subtitle": "Getting Started",
+            "text": "You’ll need an Arduino Uno, USB cable, breadboard, LEDs, 220Ω resistors, buttons, and wires. Download the Arduino IDE, plug in, and pick your board."
+          },
+          {
+            "subtitle": "Programming Basics",
+            "text": "Code runs in two parts: setup() for one-time stuff and loop() for repeating action. Use digitalWrite() to turn stuff on, analogRead() for sensors, and if-else to decide things."
+          }
+        ],
+        "tutorials": [
+          {
+            "title": "Arduino Setup & First Program",
+            "link": "https://www.youtube.com/watch?v=fCxzA9_kg6s"
+          },
+          {
+            "title": "Blink an LED with Arduino",
+            "link": "https://www.youtube.com/watch?v=KOZy9BxqMus"
+          },
+          {
+            "title": "Buttons & Inputs Tutorial",
+            "link": "https://www.youtube.com/watch?v=8QXRgD7wG94"
+          }
+        ],
+        "projects": [
+          {
+            "title": "Traffic Light",
+            "description": "Use red, yellow, and green LEDs to mimic a traffic signal with delays. Feel like a city planner!"
+          },
+          {
+            "title": "Room Alarm",
+            "description": "Add a buzzer and PIR sensor to beep when someone sneaks in—snack security activated!"
+          },
+          {
+            "title": "Dimmer Switch",
+            "description": "Twist a potentiometer to fade an LED. It’s like a mini DJ light show!"
+          }
+        ],
+        "realLifeExample": "Automatic doors use sensors and microcontrollers to open when you walk up."
+      },
+      {
+        "title": "Sensors: Giving Your Robot Senses",
+        "description": "Sensors are your robot’s eyes and ears—detecting light, heat, or motion. Let’s hook them up and see what they can do!",
+        "content": [
+          {
+            "subtitle": "Common Sensors",
+            "text": "TMP36 checks temperature, LDR senses light, HC-SR04 measures distance with sound, PIR spots motion, and touch sensors feel contact."
+          },
+          {
+            "subtitle": "Using Them",
+            "text": "Connect to Arduino pins, read data with code, and trigger stuff—like buzzing if it’s too hot."
+          }
+        ],
+        "tutorials": [
+          {
+            "title": "Ultrasonic Sensor with Arduino",
+            "link": "https://www.youtube.com/watch?v=ZKCuKVAURIw"
+          },
+          {
+            "title": "Temperature Sensor Tutorial",
+            "link": "https://www.youtube.com/watch?v=ZvJLeZ-uMwM"
+          },
+          {
+            "title": "PIR Motion Sensor Basics",
+            "link": "https://www.youtube.com/watch?v=ZiejA2A1UyQ"
+          }
+        ],
+        "projects": [
+          {
+            "title": "Smart Thermometer",
+            "description": "Show temp on an LCD screen with a TMP36 sensor—like your own weather gadget!"
+          },
+          {
+            "title": "Darkness Detector",
+            "description": "Turn on an LED when it’s dark with an LDR. Nightlight vibes!"
+          },
+          {
+            "title": "Obstacle Avoider",
+            "description": "Make a bot stop or turn with an ultrasonic sensor—like a tiny self-driving car!"
+          }
+        ],
+        "realLifeExample": "Your car’s backup beeper uses ultrasonics to warn you."
+      },
+      {
+        "title": "Actuators: Making Things Move",
+        "description": "Actuators are your robot’s muscles—turning signals into motion or sound. Let’s get rolling!",
+        "content": [
+          {
+            "subtitle": "Types of Actuators",
+            "text": "DC motors spin wheels, servos move to exact angles, steppers step precisely, buzzers beep, and solenoids push or pull."
+          },
+          {
+            "subtitle": "Controlling Them",
+            "text": "Use PWM for speed, libraries like Servo.h for ease, and extra power for big stuff—Arduino’s 5V won’t cut it alone."
+          }
+        ],
+        "tutorials": [
+          {
+            "title": "DC Motor with Arduino & L298N",
+            "link": "https://www.youtube.com/watch?v=6qGGOFa7XvM"
+          },
+          {
+            "title": "Servo Motor Basics",
+            "link": "https://www.youtube.com/watch?v=Ua8jwcOCltQ"
+          },
+          {
+            "title": "Buzzer Tutorial",
+            "link": "https://www.youtube.com/watch?v=Lo8J36N81kQ"
+          }
+        ],
+        "projects": [
+          {
+            "title": "Rolling Bot",
+            "description": "Add DC motors and wheels to a chassis and drive it around—like a toy car you built!"
+          },
+          {
+            "title": "Sweeping Arm",
+            "description": "Use a servo to sweep side-to-side—like a mini wiper for your robot."
+          },
+          {
+            "title": "Doorbell",
+            "description": "Program a buzzer to play a tune when a button’s pressed. Ding-dong!"
+          }
+        ],
+        "realLifeExample": "Electric car windows roll with DC motors."
+      },
+      {
+        "title": "Powering Your Projects",
+        "description": "No power, no fun! Let’s figure out how to keep your creations alive and kicking.",
+        "content": [
+          {
+            "subtitle": "Power Options",
+            "text": "Use AA batteries, a 9V, LiPos for rechargeables, or a wall adapter for steady juice."
+          },
+          {
+            "subtitle": "Safety Tips",
+            "text": "Match + and -, use regulators (like 7805) to avoid frying stuff, and unplug when tinkering."
+          }
+        ],
+        "tutorials": [
+          {
+            "title": "Powering Arduino Projects",
+            "link": "https://www.youtube.com/watch?v=qsZ8JulZOHY"
+          }
+        ],
+        "projects": [
+          {
+            "title": "Battery-Powered Lamp",
+            "description": "Run an LED off AA batteries with a switch—like a portable nightlight!"
+          }
+        ],
+        "realLifeExample": "Your smoke detector sips power from a 9V battery."
+      },
+      {
+        "title": "Raspberry Pi: Stepping Up Your Game",
+        "description": "Ready for more? Raspberry Pi is a tiny computer for bigger projects—like a mini laptop for robotics!",
+        "content": [
+          {
+            "subtitle": "Getting Started",
+            "text": "Grab a Pi 4, microSD card, power supply, and HDMI setup. Flash Raspberry Pi OS and boot it up."
+          },
+          {
+            "subtitle": "Why It Rocks",
+            "text": "It’s got power for video, Wi-Fi, and coding in Python—way easier than Arduino’s C++."
+          }
+        ],
+        "tutorials": [
+          {
+            "title": "Raspberry Pi Setup Guide",
+            "link": "https://www.youtube.com/watch?v=RZ6WWFwK4Ro"
+          },
+          {
+            "title": "GPIO Basics with Python",
+            "link": "https://www.youtube.com/watch?v=6ME7xuoKEEk"
+          }
+        ],
+        "projects": [
+          {
+            "title": "Weather Station",
+            "description": "Use a DHT11 sensor to show temp and humidity—like your own weather app!"
+          },
+          {
+            "title": "Pi-Powered Car",
+            "description": "Add motors and control a bot with your keyboard."
+          },
+          {
+            "title": "Smart Light",
+            "description": "Toggle an LED over Wi-Fi with a simple web app."
+          }
+        ],
+        "realLifeExample": "Smart TVs use Pi-like tech to stream your shows."
+      },
+      {
+        "title": "Advanced Topics: Going Beyond the Basics",
+        "description": "Feeling pro yet? Let’s push it further with soldering, wireless, and even some robot smarts!",
+        "content": [
+          {
+            "subtitle": "Soldering",
+            "text": "Join stuff permanently with a soldering iron—makes your projects sturdy."
+          },
+          {
+            "subtitle": "Wireless",
+            "text": "Bluetooth (HC-05) or Wi-Fi (ESP32) lets you control stuff from your phone."
+          },
+          {
+            "subtitle": "Computer Vision",
+            "text": "Add a camera and spot things with OpenCV—like a robot detective!"
+          }
+        ],
+        "tutorials": [
+          {
+            "title": "Soldering for Beginners",
+            "link": "https://www.youtube.com/watch?v=Qps9woUGkvI"
+          },
+          {
+            "title": "Bluetooth with Arduino",
+            "link": "https://www.youtube.com/watch?v=7L4tSrn9-is"
+          },
+          {
+            "title": "Pi Camera Basics",
+            "link": "https://www.youtube.com/watch?v=3V9U0ynOZpQ"
+          }
+        ],
+        "projects": [
+          {
+            "title": "Soldered LED Board",
+            "description": "Solder LEDs onto a board for a custom light show."
+          },
+          {
+            "title": "Bluetooth RC Car",
+            "description": "Drive a bot with your phone—remote control vibes!"
+          },
+          {
+            "title": "Face-Tracking Bot",
+            "description": "Use a Pi Camera to follow faces—like a selfie robot!"
+          }
+        ],
+        "realLifeExample": "Self-driving cars use vision and wireless tech to cruise around."
+      }
+    ],
+    "gear": {
+      "starterKit": "Arduino Uno kit  with breadboard, wires, LEDs, sensors.",
+      "optional": "Raspberry Pi 4 kit , soldering iron , multimeter .",
+      "supplies": "Batteries, resistors (220Ω, 1kΩ), extra LEDs."
+    },
+    "roadmapSteps": [
+      "Master the Basics: Learn circuits and build a paper circuit.",
+      "Meet Microcontrollers: Start with Arduino—blink LEDs, use buttons.",
+      "Explore Sensors: Add senses like temp or motion.",
+      "Add Motion: Control motors for moving bots.",
+      "Power Up: Keep your projects juiced safely.",
+      "Step Up with Pi: Build smarter systems like a weather station.",
+      "Go Advanced: Try soldering, wireless, or vision."
+    ]
+  }
