@@ -1,0 +1,51 @@
+{
+    "openCanvas": {
+      "title": "Open Simulator",
+      "description": "Start from scratch—build any circuit and write your code here!",
+      "iframeSrc": "https://wokwi.com/projects/new?template=arduino-uno"
+    },
+    "predefinedProjects": [
+      {
+        "id": 1,
+        "title": "LED Blink",
+        "description": "Control an LED connected to pin 13. Edit the code to change the blink speed!",
+        "iframeSrc": "https://wokwi.com/projects/344891652101374548"
+      },
+      {
+        "id": 2,
+        "title": "Button Press",
+        "description": "Press a button to toggle an LED on pin 13. Tweak the debounce or logic!",
+        "iframeSrc": "https://wokwi.com/projects/397990618860958721"
+      },
+      {
+        "id": 3,
+        "title": "Potentiometer Control",
+        "description": "Use a potentiometer to adjust LED brightness on pin 9.",
+        "iframeSrc": "https://wokwi.com/projects/344892191015961170"
+      },
+      {
+        "id": 4,
+        "title": "Temperature Sensor",
+        "description": "Read temperature from a sensor on A0 and print it to Serial.",
+        "iframeSrc": "https://wokwi.com/projects/299330254810382858"
+      },
+      {
+        "id": 5,
+        "title": "Servo Motor Control",
+        "description": "Control a servo on pin 9 with a potentiometer.",
+        "iframeSrc": "https://wokwi.com/projects/344891730528567891"
+      },
+      {
+        "id": 6,
+        "title": "Ultrasonic Distance Sensor",
+        "description": "Measure distance with an HC-SR04 and print it to Serial.",
+        "iframeSrc": "https://wokwi.com/projects/290043622233997832"
+      },
+      {
+        "id": 7,
+        "title": "Traffic Light System",
+        "description": "Simulate a traffic light with LEDs on pins 11, 12, and 13.",
+        "iframeSrc": "https://wokwi.com/projects/297322571959894536"
+      }
+    ]
+  }
