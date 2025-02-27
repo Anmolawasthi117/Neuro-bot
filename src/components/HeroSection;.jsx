@@ -1,6 +1,8 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Howl } from 'howler';
-
+import shoot from "../assets/audio/Shoot_00.mp3"
+import hit from "../assets/audio/Hit_00.mp3"
+import gameOver from "../assets/audio/Jingle_Lose_00.mp3"
 const HeroSection = () => {
   const canvasRef = useRef(null);
   const [isGameStarted, setIsGameStarted] = useState(false);
@@ -19,17 +21,17 @@ const HeroSection = () => {
   // Updated sound effects with open-source URLs
   const sounds = useRef({
     shoot: new Howl({
-      src: ['https://opengameart.org/sites/default/files/laser_0.mp3'], // From OpenGameArt 8-bit platformer SFX
+      src: [shoot], 
       preload: true,
       volume: 0.5,
     }),
     hit: new Howl({
-      src: ['https://opengameart.org/sites/default/files/explosion_0.mp3'], // From OpenGameArt 8-bit platformer SFX
+      src: [hit], 
       preload: true,
       volume: 0.5,
     }),
     gameOver: new Howl({
-      src: ['https://www.zapsplat.com/wp-content/uploads/2015/09/retro-8-bit-video-game-over-arcade-style-001.mp3'], // From ZapSplat
+      src: [gameOver], 
       preload: true,
       volume: 0.5,
     }),

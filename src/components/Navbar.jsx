@@ -17,7 +17,6 @@ const Navbar = () => {
     { to: '/projects', label: 'Projects', icon: <FaProjectDiagram />, distance: 140, size: 38 },
     { to: '/join-us', label: 'Join Us', icon: <FaUserPlus />, distance: 160, size: 34 },
     { to: '/simulator', label: 'Simulator', icon: <FaRobot />, distance: 180, size: 42 },
-    { to: '/portal', label: 'Portal', icon: <FaPlug />, distance: 200, size: 36 },
   ];
 
   useEffect(() => {
