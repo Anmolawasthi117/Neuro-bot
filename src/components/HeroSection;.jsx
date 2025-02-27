@@ -1,8 +1,8 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Howl } from 'howler';
-import shoot from "../assets/audio/Shoot_00.mp3"
-import hit from "../assets/audio/Hit_00.mp3"
-import gameOver from "../assets/audio/Jingle_Lose_00.mp3"
+import shoot from "/assets/audio/Shoot_00.mp3"
+import hit from "/assets/audio/Hit_00.mp3"
+import gameOver from "/assets/audio/Jingle_Lose_00.mp3"
 const HeroSection = () => {
   const canvasRef = useRef(null);
   const [isGameStarted, setIsGameStarted] = useState(false);
