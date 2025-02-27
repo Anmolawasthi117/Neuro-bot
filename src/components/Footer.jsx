@@ -55,7 +55,7 @@ const Footer = () => {
                 animate="visible"
               >
                 
-                Made for the bots by the bots!!!
+               `Made for the bots by a bot Anmol !!!`
               </motion.span>
             </>
           )}

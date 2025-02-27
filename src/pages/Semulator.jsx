@@ -10,7 +10,7 @@ const Semulator = () => {
     <div className="min-h-screen bg-gray-900 text-gray-100">
       <main className="max-w-5xl mx-auto p-6">
         <h1 className="text-5xl font-orbitron font-bold text-teal-400 mb-12 text-center tracking-wider drop-shadow-md">
-          Nurobots Semulator
+          Nurobots Simulator
         </h1>
         <OpenCanvas {...openCanvas} />
         <h2 className="text-4xl font-orbitron font-bold text-blue-400 mb-8 text-center tracking-wide">

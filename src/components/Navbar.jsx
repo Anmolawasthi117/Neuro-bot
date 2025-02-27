@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { FaHome, FaUsers, FaBook, FaProjectDiagram, FaUserPlus, FaRobot, FaPlug, FaSun, FaMoon, FaBars, FaTimes } from 'react-icons/fa';
+import { FaHome, FaUsers, FaBook, FaProjectDiagram, FaUserPlus, FaRobot, FaBars, FaTimes } from 'react-icons/fa';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [activeLink, setActiveLink] = useState('/');
-  const [theme, setTheme] = useState('dark');
   const [isDraggable, setIsDraggable] = useState(false);
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
@@ -25,15 +24,6 @@ const Navbar = () => {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-  useEffect(() => {
-    document.documentElement.setAttribute('data-theme', theme);
-  }, [theme]);
-
-  const toggleTheme = (e) => {
-    e.stopPropagation();
-    setTheme(theme === 'dark' ? 'light' : 'dark');
-  };
-
   const toggleDraggable = (e) => {
     e.stopPropagation();
     setIsDraggable(!isDraggable);
@@ -51,7 +41,6 @@ const Navbar = () => {
 
   const isMobile = windowWidth <= 768;
 
-  // Variants for desktop orbit
   const orbVariants = {
     closed: { scale: 1 },
     open: { scale: 1.1 },
@@ -80,18 +69,16 @@ const Navbar = () => {
     open: { x: 0, opacity: 1, transition: { duration: 0.3 } },
   };
 
-  // Adjusted drag constraints for right-aligned position
   const dragConstraints = {
-    left: -windowWidth + 240, // Allow dragging to near left edge
-    right: 0, // Right edge of viewport
-    top: 0, // Top edge
-    bottom: window.innerHeight - 240, // Bottom edge minus orb height/orbit
+    left: -windowWidth + 240,
+    right: 0,
+    top: 0,
+    bottom: window.innerHeight - 240,
   };
 
   return (
     <>
       {isMobile ? (
-        // Mobile: Hamburger Menu
         <div className="fixed top-4 right-4 z-50">
           <motion.button
             className="w-12 h-12 bg-[var(--rf-accent)] rounded-full flex items-center justify-center border-2 border-[var(--rf-link)]"
@@ -111,16 +98,7 @@ const Navbar = () => {
               animate="open"
               exit="closed"
             >
-              <div className="flex justify-between items-center mb-4">
-                <motion.button
-                  className="w-10 h-10 bg-[var(--rf-secondary)] rounded-full flex items-center justify-center"
-                  onClick={toggleTheme}
-                  onTouchStart={toggleTheme}
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                >
-                  {theme === 'dark' ? <FaSun className="text-[var(--rf-text)]" /> : <FaMoon className="text-[var(--rf-text)]" />}
-                </motion.button>
+              <div className="flex justify-end items-center mb-4">
                 <motion.button
                   className="w-10 h-10 bg-[var(--rf-secondary)] rounded-full flex items-center justify-center"
                   onClick={toggleMenu}
@@ -154,14 +132,13 @@ const Navbar = () => {
           )}
         </div>
       ) : (
-        // Desktop/Tablet: Orbiting Navbar
         <motion.div
-          className="absolute z-50 top-5 right-20 md:right-32 lg:right-40 translate-y-32 select-none touch-none"
+          className="fixed top-5 right-20 md:right-32 lg:right-40 z-50 select-none touch-none"
           drag={isDraggable}
           dragConstraints={dragConstraints}
           dragElastic={0.2}
           dragMomentum={false}
-          initial={{ x: 0, y: 0 }} // Restored initial position for drag
+          initial={{ x: -37.5999, y: 118 }} // Set initial position here
           onDoubleClick={toggleDraggable}
         >
           <motion.div
@@ -176,11 +153,10 @@ const Navbar = () => {
             <div className="absolute inset-0 bg-[var(--rf-link)] opacity-20 rounded-full animate-pulse" />
             <motion.div
               className="text-[var(--rf-primary)] text-2xl z-30"
-              onClick={toggleTheme}
-              animate={{ rotate: theme === 'dark' ? 0 : 180 }}
+              animate={{ rotate: isOpen ? 90 : 0 }}
               transition={{ duration: 0.3 }}
             >
-              {theme === 'dark' ? <FaSun /> : <FaMoon />}
+              <FaBars />
             </motion.div>
           </motion.div>
 
