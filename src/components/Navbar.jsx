@@ -29,8 +29,9 @@ const Navbar = () => {
     setIsDraggable(!isDraggable);
   };
 
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
+  const toggleMenu = (e) => {
+    e.stopPropagation();
+    setIsOpen((prev) => !prev);
   };
 
   const handleNavigate = (to) => {
@@ -83,26 +84,33 @@ const Navbar = () => {
           <motion.button
             className="w-12 h-12 bg-[var(--rf-accent)] rounded-full flex items-center justify-center border-2 border-[var(--rf-link)]"
             onClick={toggleMenu}
-            onTouchStart={toggleMenu}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
             {isOpen ? <FaTimes className="text-[var(--rf-primary)] text-2xl" /> : <FaBars className="text-[var(--rf-primary)] text-2xl" />}
           </motion.button>
 
-          {isOpen && (
+          <motion.div
+            className={`fixed inset-0 z-40 ${isOpen ? 'block' : 'hidden'}`}
+            initial="closed"
+            animate={isOpen ? 'open' : 'closed'}
+            variants={mobileMenuVariants}
+          >
+            {/* Overlay to close menu */}
+            <div
+              className="absolute inset-0 bg-black opacity-50"
+              onClick={toggleMenu}
+            ></div>
+
+            {/* Mobile Menu */}
             <motion.div
-              className="fixed top-0 right-0 w-64 h-full bg-[var(--rf-primary)] shadow-lg z-40 p-4"
+              className="relative top-0 right-0 w-64 h-full bg-[var(--rf-primary)] shadow-lg p-4 z-50"
               variants={mobileMenuVariants}
-              initial="closed"
-              animate="open"
-              exit="closed"
             >
               <div className="flex justify-end items-center mb-4">
                 <motion.button
                   className="w-10 h-10 bg-[var(--rf-secondary)] rounded-full flex items-center justify-center"
                   onClick={toggleMenu}
-                  onTouchStart={toggleMenu}
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                 >
@@ -117,10 +125,8 @@ const Navbar = () => {
                       className={({ isActive }) =>
                         `flex items-center space-x-2 text-[var(--rf-text)] p-2 rounded-md ${
                           isActive ? 'bg-[var(--rf-accent)] text-[var(--rf-primary)]' : 'hover:bg-[var(--rf-link)]/20'
-                        } transition-all duration-200`
-                      }
+                        } transition-all duration-200`}
                       onClick={() => handleNavigate(link.to)}
-                      onTouchStart={() => handleNavigate(link.to)}
                     >
                       <span className="text-lg">{link.icon}</span>
                       <span className="text-base font-[Orbitron]">{link.label}</span>
@@ -129,7 +135,7 @@ const Navbar = () => {
                 ))}
               </ul>
             </motion.div>
-          )}
+          </motion.div>
         </div>
       ) : (
         <motion.div
@@ -138,7 +144,7 @@ const Navbar = () => {
           dragConstraints={dragConstraints}
           dragElastic={0.2}
           dragMomentum={false}
-          initial={{ x: -37.5999, y: 118 }} // Set initial position here
+          initial={{ x: -37.5999, y: 118 }}
           onDoubleClick={toggleDraggable}
         >
           <motion.div
