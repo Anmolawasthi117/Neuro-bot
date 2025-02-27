@@ -1,20 +1,43 @@
 [
-    {
-      "id": 1,
-      "title": "Rover X1",
-      "description": "A rugged all-terrain rover with real-time navigation.",
-      "image": "https://i.pinimg.com/736x/8e/7d/70/8e7d70f0fba6fc4d57dd074e99e6466a.jpg",
-      "video": null,
-      "tech": ["Arduino", "LiDAR", "React"],
-      "model": "/assets/rover-x1.glb" 
-    },
-    {
-      "id": 2,
-      "title": "Drone Scout",
-      "description": "Lightweight scouting drone with live video feed.",
-      "image": "https://i.pinimg.com/474x/3a/1f/3e/3a1f3ea7a1ccaebc0f6c4b84ea604f6e.jpg",
-      "video": null,
-      "tech": ["Raspberry Pi", "Camera Module"],
-      "model": null
-    }
-  ]
+  {
+    "id": 1,
+    "title": "Spiderbot",
+    "description": "A high-speed autonomous racing bot built for competition.",
+    "image": "/src/assets/spiderbot.jpeg",
+    "tech": ["ESP32", "C++", "Sensors"],
+    "status": "Completed"
+  },
+  {
+    "id": 2,
+    "title": "Lidar",
+    "description": "A army lidar concept using ultrasonic sensor.",
+    "image": "/src/assets/lidar.mp4",
+    "tech": ["Arduino Uno", "C++", "Ultrasonic Sensor", "Servo Motor","IoT"],
+    "status": "Completed"
+  },
+  {
+    "id": 3,
+    "title": "HumanFollowerBot",
+    "description": "A bot that follows human using ultrasonic sensor.",
+    "image": "/src/assets/humanfollower.mp4",
+    "tech": ["Arduino Uno", "C++", "IoT"],
+    "status": "Completed"
+  },
+  {
+    "id": 4,
+    "title": "Gesture Controlled bot",
+    "description": "A bot that that can be controlled using hand  gesture.",
+    "image": "/src/assets/gesture.mp4",
+    "tech": ["ESP32", "C++", "IoT"],
+    "status": "Completed"
+  },
+  {
+    "id": 5,
+    "title": "Emo bot",
+    "description": "Emo bot your roboic friend",
+    "image": "/src/assets/emo.mp4",
+    "tech": ["raspberrypi", "python", "IoT","Sensors"],
+    "status": "In Progress"
+  }
+
+]
