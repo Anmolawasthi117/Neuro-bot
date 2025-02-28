@@ -115,11 +115,11 @@ const HeroSection = () => {
       }
       if (!isGameStarted || gameState.current.gameOver) return;
 
-      if (e.key === 'ArrowLeft' && gameState.current.ship.x > 20) {
+      if (e.key === 'A' && gameState.current.ship.x > 20) {
         gameState.current.ship.x -= gameState.current.ship.speed;
-      } else if (e.key === 'ArrowRight' && gameState.current.ship.x < canvas.width - 20) {
+      } else if (e.key === 'D' && gameState.current.ship.x < canvas.width - 20) {
         gameState.current.ship.x += gameState.current.ship.speed;
-      } else if (e.key === 'ArrowUp' || e.key === ' ') {
+      } else if (e.key === 'W' || e.key === ' ') {
         gameState.current.bullets.push({
           x: gameState.current.ship.x,
           y: gameState.current.ship.y - 20,
@@ -277,7 +277,7 @@ const HeroSection = () => {
       )}
 
       <div className="mt-4 text-center text-[var(--rf-link)] font-[Orbitron] text-sm md:text-base opacity-90 animate-flicker">
-        Use ← → to move, ↑ or Space to shoot. Press any key to start!
+        Use A,D to move, W or Space to shoot. Press any key to start!
       </div>
     </section>
   );

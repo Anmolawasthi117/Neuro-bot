@@ -8,7 +8,7 @@ const FirstSec = () => {
         
         {/* Flickering Title (Original Positioning) */}
         <h1 className="absolute top-[40%] left-1/2 transform -translate-x-1/2 text-6xl md:text-8xl text-white animate-flicker text-center whitespace-nowrap">
-         NuroBots
+         NeuroBots
         </h1>
 
         {/* Marquee Scroll */}
