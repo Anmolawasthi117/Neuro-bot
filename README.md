@@ -89,7 +89,7 @@ Neuro-bot-main/
 
 ```bash
 # Clone the repository
-git clone [https://github.com/yourusername/neuro-bot.git](https://github.com/Anmolawasthi117/Neuro-bot)
+git clone https://github.com/yourusername/neuro-bot.git
 cd neuro-bot
 
 # Install dependencies
@@ -109,7 +109,7 @@ We welcome contributions to improve the site!
 
 ```bash
 # Fork and clone
-git clone [https://github.com/YOUR_USERNAME/neuro-bot.git](https://github.com/Anmolawasthi117/Neuro-bot)
+git clone https://github.com/YOUR_USERNAME/neuro-bot.git
 
 # Create your feature branch
 git checkout -b feature/amazing-feature
