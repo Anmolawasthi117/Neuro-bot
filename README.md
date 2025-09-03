@@ -1,11 +1,10 @@
-
 # 🤖 Neuro Bots – Official Robotics Club Website
 
 **Neuro Bots** is the official website of the **Neuro Bots Robotics Club**, run by the **Artificial Intelligence and Robotics Branch** of Gyan Ganga Institute of Technology and Science. This site showcases our club's mission, team, and projects in the fields of AI and robotics.
 
 > 🏫 Officially acknowledged by the Head of Department (HOD) and Principal of our college.
 
----
+--- //this is comment
 
 ## 🌐 Live Site
 
@@ -35,7 +34,7 @@ Neuro-bot-main/
 ├── vercel.json         # Deployment config for Vercel
 └── package.json, LICENSE, .gitignore, README.md
 
-````
+```
 
 ---
 
@@ -97,7 +96,7 @@ npm install
 
 # Start the development server
 npm run dev
-````
+```
 
 Open your browser at `http://localhost:5173` to see the app live.
 
@@ -133,9 +132,9 @@ This project is open source and available under the [MIT License](./LICENSE).
 
 ## 🙌 Acknowledgements
 
-* Department of Artificial Intelligence and Robotics
-* HOD and Principal of Gyan Ganga Institute of Technology and Science
-* Contributors and members of the Neuro Bots Club
+- Department of Artificial Intelligence and Robotics
+- HOD and Principal of Gyan Ganga Institute of Technology and Science
+- Contributors and members of the Neuro Bots Club
 
 ---
 
@@ -144,7 +143,7 @@ This project is open source and available under the [MIT License](./LICENSE).
 Have questions or want to collaborate?
 📧 Email us at: \[[anmolawasthi117@gmail.com](mailto:anmolawasthi117@gmail.com)]
 
-
 ```
 
 
+```
